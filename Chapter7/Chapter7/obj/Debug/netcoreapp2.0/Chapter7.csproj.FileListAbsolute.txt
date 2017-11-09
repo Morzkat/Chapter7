@@ -1,0 +1,11 @@
+C:\Users\felix\source\repos\Chapter7\Chapter7\obj\Debug\netcoreapp2.0\Chapter7.csprojResolveAssemblyReference.cache
+C:\Users\felix\source\repos\Chapter7\Chapter7\obj\Debug\netcoreapp2.0\Chapter7.csproj.CoreCompileInputs.cache
+C:\Users\felix\source\repos\Chapter7\Chapter7\obj\Debug\netcoreapp2.0\Chapter7.AssemblyInfoInputs.cache
+C:\Users\felix\source\repos\Chapter7\Chapter7\obj\Debug\netcoreapp2.0\Chapter7.AssemblyInfo.cs
+C:\Users\felix\source\repos\Chapter7\Chapter7\bin\Debug\netcoreapp2.0\Chapter7.deps.json
+C:\Users\felix\source\repos\Chapter7\Chapter7\bin\Debug\netcoreapp2.0\Chapter7.runtimeconfig.json
+C:\Users\felix\source\repos\Chapter7\Chapter7\bin\Debug\netcoreapp2.0\Chapter7.runtimeconfig.dev.json
+C:\Users\felix\source\repos\Chapter7\Chapter7\bin\Debug\netcoreapp2.0\Chapter7.dll
+C:\Users\felix\source\repos\Chapter7\Chapter7\bin\Debug\netcoreapp2.0\Chapter7.pdb
+C:\Users\felix\source\repos\Chapter7\Chapter7\obj\Debug\netcoreapp2.0\Chapter7.dll
+C:\Users\felix\source\repos\Chapter7\Chapter7\obj\Debug\netcoreapp2.0\Chapter7.pdb
