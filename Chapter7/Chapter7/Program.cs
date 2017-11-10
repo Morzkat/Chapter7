@@ -8,7 +8,7 @@ namespace Chapter7
         {
             int number = 10;
             Console.WriteLine("Si se introduce un numero con mas o con menos de 2 digitos el programa se cerrara");
-
+            Console.WriteLine("Numero entre 10 y 99");
             do
             {
                 int exercise = 47;
@@ -28,6 +28,7 @@ namespace Chapter7
                         Exercise46(number);
                         break;
                     case 47:
+                        Exercise47();
                         break;
                     case 48:
                         break;
@@ -63,7 +64,7 @@ namespace Chapter7
                 Console.WriteLine("| El ultimo digito es: " + GetLastDigit(number) + "     |");
 
 
-                if (IsFiveMultiple(number) && number < 30)
+                if (IsMultipleOf(number, 5) && number < 30)
                 {
                     Console.WriteLine("| El primer digito es : " + GetFirstDigit(number) + "    |");
                 }
@@ -90,15 +91,24 @@ namespace Chapter7
                     break;
 
                 case 2:
-                    Console.WriteLine("ultimo digito 2");
+
+                    Console.WriteLine("----------------------------");
+                    Console.WriteLine("| El ultimo digito es 2" + "    |");
+                    Console.WriteLine("| Suma de los 2 digitos: " + (GetFirstDigit(number) + GetLastDigit(number)) + " |");
+                    Console.WriteLine("----------------------------");
+                    
                     break;
 
                 case 3:
-                    Console.WriteLine("ultimo digito 3");
+                    Console.WriteLine("------------------------------------");
+                    Console.WriteLine("| El ultimo digito es 3" + "            |");
+                    Console.WriteLine("| El producto de los 2 digitos: " + (GetFirstDigit(number) * GetLastDigit(number)) + " |");
+                    Console.WriteLine("------------------------------------");
+
                     break;
 
                 default:
-                    Console.WriteLine("default");
+                    Console.WriteLine("Debe ser un numero que termine en '1', '2' o '3'");
                     break;
             }
         }
@@ -106,7 +116,86 @@ namespace Chapter7
 
         private void Exercise47()
         {
+            Console.WriteLine("Ejercicio numero 47");
 
+            Console.WriteLine("Primer numero");
+            int number1 = Int32.Parse(Console.ReadLine());
+
+            Console.WriteLine("Segundo numero");
+            int number2 = Int32.Parse(Console.ReadLine());
+
+            int result = number1 - number2;
+
+            if (IsEven(result))
+            {
+                Console.WriteLine("Suma de los 2 numeros: " + (number1 + number2));
+            }
+
+            else if (IsPrime(result) && result < 10)
+            {
+                Console.WriteLine("Producto de los 2 numeros: " + (number1 * number2));
+
+            }
+            //Will never be true because if last digit is 4 means is even 
+            else if (GetLastDigit(result) == 4)
+            {
+                Console.WriteLine("" + GetFirstDigit(result) + " ------ " + GetLastDigit(result) + " ------ ");
+
+            }
+        }
+
+        private void Exercise48(int number)
+        {
+            Console.WriteLine("Ejercicio 48");
+
+            if (IsPrime(number))
+            {
+                Console.WriteLine("Es un numero primo");
+            }
+
+            else
+            {
+                Console.WriteLine("No es un numero primo");
+            }
+        }
+
+        private void Exercise49()
+        {
+            Console.WriteLine("Ejercicio 49");
+            Console.WriteLine("Introduce un numero entero");
+            int number = Int32.Parse(Console.ReadLine());
+
+            if (IsMultipleOf(number,4))
+            {
+                Console.WriteLine("El numero es multiplo de 4");
+
+                if (IsPrime(GetLastDigit(number)))
+                {
+                    Console.WriteLine("El ultimo digito es primo");
+                }
+            }
+        }
+
+        private void Exercise50()
+        {
+            Console.WriteLine("Ejercicio 50");
+            Console.WriteLine("Introduce un numero entero");
+            int number = Int32.Parse(Console.ReadLine());
+
+            if (IsMultipleOf(number, 4))
+            {
+                Console.WriteLine("La mitad de: " + number + "es: " + (number / 2));
+            }
+
+            else if (IsMultipleOf(number, 5))
+            {
+                Console.WriteLine("El cuadrado del numero es: " + (number * number));
+            }
+
+            else if (IsMultipleOf(number, 6))
+            {
+                Console.WriteLine("Su primer digito es: " + GetFirstDigit(number));
+            }
         }
 
         private bool IsEven(int n) => (n % 2 == 0) ? true : false;
@@ -144,7 +233,7 @@ namespace Chapter7
             return number / 10;
         }
 
-        private bool IsFiveMultiple(int number) => (number % 5 == 0) ? true : false;
+        private bool IsMultipleOf(int number, int multipleOf) => (number % multipleOf == 0) ? true : false;
 
         //Chapter7
         static void Main(string[] args)
