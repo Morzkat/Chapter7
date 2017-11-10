@@ -219,9 +219,9 @@ namespace Chapter7
 
         private bool IsPrime(int number)
         {
-            for (int i = 2; i < 2; i++)
+            for (int i = 3; i <= number; i++)
             {
-                return (number % i == 0) ? false : true;
+                if (number % i == 0) return false;
             }
             return true;
         }
