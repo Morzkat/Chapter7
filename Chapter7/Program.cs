@@ -31,10 +31,13 @@ namespace Chapter7
                         Exercise47();
                         break;
                     case 48:
+                        Exercise48(number);
                         break;
                     case 49:
+                        Exercise49();
                         break;
                     case 50:
+                        Exercise50();
                         break;
 
                     default:
